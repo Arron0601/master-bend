@@ -4,10 +4,11 @@ using UnityEngine;
 using System;
 using UnityEngine.SceneManagement;
 
-public class VidPlayer : MonoBehaviour
+public class VidPlayer1 : MonoBehaviour
 {
     VideoPlayer a = new VideoPlayer();
-   
+    string ButtonText = "Skip";
+    bool SkipORnot = false; //Skip不作用
     public List<VideoClip> videos = new List<VideoClip>();
     public Transform skip;
     //System.Collections.Generic.IList<VideoClip> videos = new IList<VideoClip>()
@@ -29,8 +30,8 @@ public class VidPlayer : MonoBehaviour
 
     void EndReached(UnityEngine.Video.VideoPlayer a)
     {
-        SceneManager.LoadScene(1);
-      
+        SceneManager.LoadScene(3);
+        //停止目前影片
 
 
         /**a.clip = videos[1];//播放陣列1影片

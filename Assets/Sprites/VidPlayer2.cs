@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.SceneManagement;
 
-public class VidPlayer : MonoBehaviour
+public class VidPlayer2 : MonoBehaviour
 {
     VideoPlayer a = new VideoPlayer();
    
@@ -29,8 +29,8 @@ public class VidPlayer : MonoBehaviour
 
     void EndReached(UnityEngine.Video.VideoPlayer a)
     {
-        SceneManager.LoadScene(1);
-      
+        SceneManager.LoadScene(5);
+        //停止目前影片
 
 
         /**a.clip = videos[1];//播放陣列1影片
