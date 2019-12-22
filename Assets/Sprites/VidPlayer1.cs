@@ -7,8 +7,7 @@ using UnityEngine.SceneManagement;
 public class VidPlayer1 : MonoBehaviour
 {
     VideoPlayer a = new VideoPlayer();
-    string ButtonText = "Skip";
-    bool SkipORnot = false; //Skip不作用
+   
     public List<VideoClip> videos = new List<VideoClip>();
     public Transform skip;
     //System.Collections.Generic.IList<VideoClip> videos = new IList<VideoClip>()
